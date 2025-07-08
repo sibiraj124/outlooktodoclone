@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>To-Do</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+   <!--Header-->
+    <header>
+    <div class="title">
+    <i data-lucide="grip"></i>
+    <h3>To Do</h3>
+    </div>
+    <div class="search">
+        <i data-lucide="search"></i>
+        <input type="text" placeholder="Search To Do">
+    </div>
+    <div class="header-icons">
+        <a href="#setting"><i data-lucide="settings"></i></a>
+        <a href="#question"><i data-lucide="circle-question-mark"></i></a>
+        <a href="#settings"><i data-lucide="newspaper"></i></a>
+        <a href="#profile"><i data-lucide="circle-user"></i></a>
+    </div> 
+    <!--menu icon for small screen to hide the header icons -->   
+    <div class="menu-icon">
+    <i data-lucide="menu"></i>
+  </div>
+    </header>
+    <!--End of Header-->
+
+    <!--the container contains sidebar and task content-->
+    <div class="container">
+      <!--sidebar-->       
+  <aside class="sidebar">
+    <ul>
+        <li class="sidebar-menu-icon"><a href="#"><i data-lucide="align-justify"></i></a></li>
+        <li><a href="#myday-section"><i data-lucide="sun"></i> My Day</a></li>
+        <li><a href="#important-section" onclick="showSection('important-section')"><i data-lucide="star"></i> Important</a></li>
+        <li><a href="#planned"><i data-lucide="calendar-cog"></i> Planned</a></li>
+        <li><a href="#completed"><i data-lucide="user-round"></i> Assigned</a></li>
+        <li><a href="#tasks"><i data-lucide="flag"></i> Flagged email</a></li>
+        <li><a href="#completed"><i data-lucide="house"></i> Tasks</a></li>
+        <li><hr class="sidebar-line"></li>
+        <li class="sidebar-newlist-tab"><a href="#newlist"><i class="fa-solid fa-plus"></i> New list</a></li>
+    </ul>
+  </aside>
+    <!--End of sidebar-->
+    <div class="task-content"> 
+       <section class="myday-section">
+       
+        <div class="myday-header">
+        <div class="myday-header-left">
+        <i data-lucide="sun"></i>
+        <div class="title-block">
+        <h2>My Day</h2>
+        <p class="date">Thursday, July 3</p>
+        </div>
+        <div class="myday-header-left-actions">
+        <div  class="myday-header-left-actions-icons"><i data-lucide="ellipsis"></i></div>
+        <div class="myday-header-left-actions-icons"><i data-lucide="layout-grid"></i> <span>Grid</span></div>
+        <div class="myday-header-left-actions-icons"><i data-lucide="align-left"></i> <span>List</span></div>
+        </div>
+        </div>
+        <div class="myday-header-right">
+        <a class="myday-header-right-icons"><i data-lucide="arrow-up-down"></i><span>Sort</span></a>
+        <a class="myday-header-right-icons"><i data-lucide="wallet"></i> <span>Group</span></a>
+        <a class="myday-header-right-icons"><i data-lucide="lightbulb"></i> <span>Suggetions</span></a> 
+        </div>
+        </div>
+       
+        <div class="add-task-container">
+        <div class="add-task-input">
+          <input type="text" placeholder="Add a task">
+        </div>
+        <div class="add-task-input-bottom-bar">
+          <div class="add-task-input-bottom-bar-icons">
+          <i data-lucide="calendar"></i>
+          <i data-lucide="bell"></i>
+          <i data-lucide="refresh-ccw"></i>
+          </div>
+            <button class="add-button">Add</button>
+          </div>
+          </div>
+      </section>
+      <section class="important-section">
+        <div class="important-header">
+        <div class="important-header-left">
+        <i class="fa-regular fa-star"></i>
+        <h2>Important</h2>
+        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+        <a href="#"><i class="fa-solid fa-border-all"></i> <span>Grid</span></a>
+        <a href="#"><i class="fa-solid fa-list"></i> <span>List</span></a>
+        </div>
+        <div class="important-header-right">
+        <a href="#"><i class="fa-solid fa-filter"></i><span>Sort</span></a>
+        </div>
+        </div>
+        <div class="add-task-input">
+          <input type="text" placeholder="Add a task">
+        </div>
+        <div class="add-task-input-bottom-bar">
+          <div class="add-task-input-bottom-bar-left">
+          <i class="fa-solid fa-calendar-days"></i>
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-repeat"></i>
+          </div>
+          <div class="add-task-input-bottom-bar-right">
+            <button>add</button>
+          </div>
+          </div>
+        
+</div>
+
+  
+  </div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>     
